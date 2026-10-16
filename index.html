@@ -1,0 +1,334 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Discover practical mobile apps for telecom engineers, equipment management and everyday learning.">
+  <meta name="theme-color" content="#f7faf9">
+  <title>Mobile Apps | Practical Tools for Everyday Work</title>
+
+  <style>
+    :root {
+      --green: #087f6b;
+      --ink: #172a35;
+      --muted: #64748b;
+      --line: #e2e8f0;
+      --bg: #f7faf9;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: white;
+      font-family: Inter, -apple-system, BlinkMacSystemFont,
+        "Segoe UI", sans-serif;
+      line-height: 1.6;
+    }
+
+    a { color: var(--green); }
+
+    .container {
+      width: min(1080px, 90%);
+      margin: auto;
+    }
+
+    header {
+      border-bottom: 1px solid var(--line);
+      padding: 20px 0;
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .brand {
+      color: var(--ink);
+      text-decoration: none;
+      font-size: 20px;
+      font-weight: 800;
+    }
+
+    nav a { text-decoration: none; }
+
+    .hero {
+      padding: 88px 0 76px;
+      background: var(--bg);
+      text-align: center;
+    }
+
+    .eyebrow {
+      color: var(--green);
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      font-size: 13px;
+    }
+
+    h1 {
+      max-width: 760px;
+      margin: 16px auto;
+      font-size: clamp(38px, 6vw, 64px);
+      line-height: 1.1;
+      letter-spacing: -1.8px;
+    }
+
+    .intro {
+      max-width: 650px;
+      margin: 20px auto 28px;
+      color: var(--muted);
+      font-size: 18px;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 11px 18px;
+      margin: 4px;
+      border-radius: 9px;
+      background: var(--green);
+      color: white;
+      text-decoration: none;
+      font-weight: 700;
+    }
+
+    .button.outline {
+      color: var(--green);
+      background: white;
+      border: 1px solid var(--green);
+    }
+
+    section { padding: 64px 0; }
+
+    h2 {
+      margin: 0 0 10px;
+      font-size: 32px;
+      letter-spacing: -0.7px;
+    }
+
+    .section-intro {
+      color: var(--muted);
+      margin-top: 0;
+    }
+
+    .app-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 22px;
+      margin-top: 28px;
+    }
+
+    .app-card {
+      padding: 26px;
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      background: white;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .app-icon {
+      width: 64px;
+      height: 64px;
+      border-radius: 15px;
+      display: grid;
+      place-items: center;
+      background: #e4f5ef;
+      font-size: 32px;
+      margin-bottom: 14px;
+    }
+
+    .app-card h3 {
+      margin: 4px 0 8px;
+      font-size: 21px;
+    }
+
+    .app-card p {
+      color: var(--muted);
+      margin: 0 0 18px;
+    }
+
+    .app-links { margin-top: auto; }
+
+    .tag {
+      display: inline-block;
+      color: var(--green);
+      background: #e9f7f2;
+      border-radius: 20px;
+      padding: 4px 10px;
+      font-size: 12px;
+      font-weight: 700;
+    }
+
+    .about {
+      background: var(--bg);
+      text-align: center;
+    }
+
+    .about p {
+      max-width: 700px;
+      margin: 12px auto;
+      color: var(--muted);
+    }
+
+    footer {
+      padding: 28px 0;
+      border-top: 1px solid var(--line);
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .footer-inner {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    footer a { text-decoration: none; }
+
+    @media (max-width: 650px) {
+      .hero { padding: 64px 0 54px; }
+      .app-grid { grid-template-columns: 1fr; }
+      section { padding: 48px 0; }
+      h2 { font-size: 28px; }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <nav class="container">
+      <a class="brand" href="#">Bom Apps</a>
+      <a href="#apps">Explore apps ↓</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <div class="eyebrow">Useful apps. Real-world solutions.</div>
+        <h1>Simple tools for work and everyday life.</h1>
+        <p class="intro">
+          Discover mobile apps designed to solve practical problems,
+          from telecom engineering tools to equipment records
+          and educational apps.
+        </p>
+        <a class="button" href="#apps">Explore my apps</a>
+      </div>
+    </section>
+
+    <section id="apps">
+      <div class="container">
+        <h2>Explore the apps</h2>
+        <p class="section-intro">
+          Find the right tool for your work, projects or family.
+        </p>
+
+        <div class="app-grid">
+          <article class="app-card">
+            <div class="app-icon">🔢</div>
+            <span class="tag">Productivity</span>
+            <h3>Serial Collector</h3>
+            <p>
+              Organize serial number records for devices,
+              equipment, products and other items.
+            </p>
+            <div class="app-links">
+              <a class="button"
+                 href="https://apps.apple.com/vn/app/serial-collector/id6761130114"
+                 target="_blank" rel="noopener">
+                App Store ↗
+              </a>
+              <!-- Add the verified Google Play URL here -->
+            </div>
+          </article>
+
+          <article class="app-card">
+            <div class="app-icon">📡</div>
+            <span class="tag">Telecom Tools</span>
+            <h3>Microwave Link Calculator</h3>
+            <p>
+              Practical calculation and planning tools
+              for microwave radio links.
+            </p>
+            <div class="app-links">
+              <a class="button"
+                 href="https://apps.apple.com/app/id6499489507"
+                 target="_blank" rel="noopener">
+                App Store ↗
+              </a>
+              <a class="button outline"
+                 href="https://play.google.com/store/apps/details?id=com.pro.microwave_viba"
+                 target="_blank" rel="noopener">
+                Google Play ↗
+              </a>
+            </div>
+          </article>
+
+          <article class="app-card">
+            <div class="app-icon">📶</div>
+            <span class="tag">Telecom Tools</span>
+            <h3>Antenna Coverage</h3>
+            <p>
+              Explore antenna coverage information
+              with a tool built for mobile users.
+            </p>
+            <div class="app-links">
+              <a class="button"
+                 href="https://apps.apple.com/app/id6670706538"
+                 target="_blank" rel="noopener">
+                App Store ↗
+              </a>
+            </div>
+          </article>
+
+          <article class="app-card">
+            <div class="app-icon">📚</div>
+            <span class="tag">Education</span>
+            <h3>English Grade 3</h3>
+            <p>
+              English practice and review activities
+              designed for primary-school learners.
+            </p>
+            <div class="app-links">
+              <a class="button"
+                 href="https://apps.apple.com/app/id6762140263"
+                 target="_blank" rel="noopener">
+                App Store ↗
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="about">
+      <div class="container">
+        <h2>Built to be useful</h2>
+        <p>
+          My goal is to create straightforward mobile apps
+          that help people work more efficiently and
+          solve everyday problems.
+        </p>
+        <p>
+          Have a question or suggestion?
+          <a href="mailto:hoangminhtien.dev@gmail.com">Contact me</a>.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+      <span>© 2026 Bom Apps</span>
+      <a href="mailto:hoangminhtien.dev@gmail.com">Contact</a>
+    </div>
+  </footer>
+</body>
+</html>
