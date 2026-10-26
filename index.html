@@ -1,334 +1,114 @@
-
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Discover practical mobile apps for telecom engineers, equipment management and everyday learning.">
-  <meta name="theme-color" content="#f7faf9">
-  <title>Mobile Apps | Practical Tools for Everyday Work</title>
-
-  <style>
-    :root {
-      --green: #087f6b;
-      --ink: #172a35;
-      --muted: #64748b;
-      --line: #e2e8f0;
-      --bg: #f7faf9;
-    }
-
-    * { box-sizing: border-box; }
-
-    body {
-      margin: 0;
-      color: var(--ink);
-      background: white;
-      font-family: Inter, -apple-system, BlinkMacSystemFont,
-        "Segoe UI", sans-serif;
-      line-height: 1.6;
-    }
-
-    a { color: var(--green); }
-
-    .container {
-      width: min(1080px, 90%);
-      margin: auto;
-    }
-
-    header {
-      border-bottom: 1px solid var(--line);
-      padding: 20px 0;
-    }
-
-    nav {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 20px;
-    }
-
-    .brand {
-      color: var(--ink);
-      text-decoration: none;
-      font-size: 20px;
-      font-weight: 800;
-    }
-
-    nav a { text-decoration: none; }
-
-    .hero {
-      padding: 88px 0 76px;
-      background: var(--bg);
-      text-align: center;
-    }
-
-    .eyebrow {
-      color: var(--green);
-      font-weight: 700;
-      letter-spacing: 1px;
-      text-transform: uppercase;
-      font-size: 13px;
-    }
-
-    h1 {
-      max-width: 760px;
-      margin: 16px auto;
-      font-size: clamp(38px, 6vw, 64px);
-      line-height: 1.1;
-      letter-spacing: -1.8px;
-    }
-
-    .intro {
-      max-width: 650px;
-      margin: 20px auto 28px;
-      color: var(--muted);
-      font-size: 18px;
-    }
-
-    .button {
-      display: inline-block;
-      padding: 11px 18px;
-      margin: 4px;
-      border-radius: 9px;
-      background: var(--green);
-      color: white;
-      text-decoration: none;
-      font-weight: 700;
-    }
-
-    .button.outline {
-      color: var(--green);
-      background: white;
-      border: 1px solid var(--green);
-    }
-
-    section { padding: 64px 0; }
-
-    h2 {
-      margin: 0 0 10px;
-      font-size: 32px;
-      letter-spacing: -0.7px;
-    }
-
-    .section-intro {
-      color: var(--muted);
-      margin-top: 0;
-    }
-
-    .app-grid {
-      display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-      gap: 22px;
-      margin-top: 28px;
-    }
-
-    .app-card {
-      padding: 26px;
-      border: 1px solid var(--line);
-      border-radius: 18px;
-      background: white;
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-    }
-
-    .app-icon {
-      width: 64px;
-      height: 64px;
-      border-radius: 15px;
-      display: grid;
-      place-items: center;
-      background: #e4f5ef;
-      font-size: 32px;
-      margin-bottom: 14px;
-    }
-
-    .app-card h3 {
-      margin: 4px 0 8px;
-      font-size: 21px;
-    }
-
-    .app-card p {
-      color: var(--muted);
-      margin: 0 0 18px;
-    }
-
-    .app-links { margin-top: auto; }
-
-    .tag {
-      display: inline-block;
-      color: var(--green);
-      background: #e9f7f2;
-      border-radius: 20px;
-      padding: 4px 10px;
-      font-size: 12px;
-      font-weight: 700;
-    }
-
-    .about {
-      background: var(--bg);
-      text-align: center;
-    }
-
-    .about p {
-      max-width: 700px;
-      margin: 12px auto;
-      color: var(--muted);
-    }
-
-    footer {
-      padding: 28px 0;
-      border-top: 1px solid var(--line);
-      color: var(--muted);
-      font-size: 14px;
-    }
-
-    .footer-inner {
-      display: flex;
-      justify-content: space-between;
-      flex-wrap: wrap;
-      gap: 12px;
-    }
-
-    footer a { text-decoration: none; }
-
-    @media (max-width: 650px) {
-      .hero { padding: 64px 0 54px; }
-      .app-grid { grid-template-columns: 1fr; }
-      section { padding: 48px 0; }
-      h2 { font-size: 28px; }
-    }
-  </style>
+  <title>Serial Collector — Stop Typing. Start Scanning.</title>
+  <meta name="description" content="Capture equipment serial numbers with barcode and QR scanning, camera OCR, and manual entry. Organize records and export reports with Serial Collector for iPhone and Android.">
+  <meta name="theme-color" content="#0b1220">
+  <link rel="canonical" href="https://YOUR-SITE-NAME.netlify.app/">
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="stylesheet" href="styles.css">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Serial Collector">
+  <meta property="og:title" content="Serial Collector — Stop Typing. Start Scanning.">
+  <meta property="og:description" content="Capture serial numbers, organize equipment records, and export reports from your phone.">
+  <meta property="og:url" content="https://YOUR-SITE-NAME.netlify.app/">
+  <meta property="og:image" content="https://YOUR-SITE-NAME.netlify.app/assets/og-image.svg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Serial Collector — Stop Typing. Start Scanning.">
+  <meta name="twitter:description" content="Capture serial numbers, organize equipment records, and export reports from your phone.">
+  <meta name="twitter:image" content="https://YOUR-SITE-NAME.netlify.app/assets/og-image.svg">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Serial Collector",
+    "applicationCategory": "BusinessApplication",
+    "operatingSystem": "iOS, Android",
+    "description": "Capture and organize equipment serial numbers using barcode and QR scanning, OCR, and manual entry.",
+    "installUrl": [
+      "https://apps.apple.com/vn/app/serial-collector/id6761130114?l=vi",
+      "https://play.google.com/store/apps/details?id=com.tien.serialcollectorandroid"
+    ]
+  }
+  </script>
 </head>
-
 <body>
-  <header>
-    <nav class="container">
-      <a class="brand" href="#">Bom Apps</a>
-      <a href="#apps">Explore apps ↓</a>
-    </nav>
+  <header class="site-header">
+    <a class="brand" href="#" aria-label="Serial Collector home">
+      <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 40 40"><rect x="3" y="3" width="34" height="34" rx="10" fill="currentColor" opacity=".14"/><path d="M11 11v18M15 11v18M19 11v18M25 11v18M29 11v18M33 11v18" stroke="currentColor" stroke-width="2.3" stroke-linecap="round"/><path d="M9 8h22" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg></span>
+      <span>Serial Collector</span>
+    </a>
+    <nav><a href="#features">Features</a><a href="#workflow">How it works</a><a href="#download" class="nav-cta">Get the app <span aria-hidden="true">↗</span></a></nav>
   </header>
 
   <main>
     <section class="hero">
-      <div class="container">
-        <div class="eyebrow">Useful apps. Real-world solutions.</div>
-        <h1>Simple tools for work and everyday life.</h1>
-        <p class="intro">
-          Discover mobile apps designed to solve practical problems,
-          from telecom engineering tools to equipment records
-          and educational apps.
-        </p>
-        <a class="button" href="#apps">Explore my apps</a>
-      </div>
-    </section>
-
-    <section id="apps">
-      <div class="container">
-        <h2>Explore the apps</h2>
-        <p class="section-intro">
-          Find the right tool for your work, projects or family.
-        </p>
-
-        <div class="app-grid">
-          <article class="app-card">
-            <div class="app-icon">🔢</div>
-            <span class="tag">Productivity</span>
-            <h3>Serial Collector</h3>
-            <p>
-              Organize serial number records for devices,
-              equipment, products and other items.
-            </p>
-            <div class="app-links">
-              <a class="button"
-                 href="https://apps.apple.com/vn/app/serial-collector/id6761130114"
-                 target="_blank" rel="noopener">
-                App Store ↗
-              </a>
-              <!-- Add the verified Google Play URL here -->
-            </div>
-          </article>
-
-          <article class="app-card">
-            <div class="app-icon">📡</div>
-            <span class="tag">Telecom Tools</span>
-            <h3>Microwave Link Calculator</h3>
-            <p>
-              Practical calculation and planning tools
-              for microwave radio links.
-            </p>
-            <div class="app-links">
-              <a class="button"
-                 href="https://apps.apple.com/app/id6499489507"
-                 target="_blank" rel="noopener">
-                App Store ↗
-              </a>
-              <a class="button outline"
-                 href="https://play.google.com/store/apps/details?id=com.pro.microwave_viba"
-                 target="_blank" rel="noopener">
-                Google Play ↗
-              </a>
-            </div>
-          </article>
-
-          <article class="app-card">
-            <div class="app-icon">📶</div>
-            <span class="tag">Telecom Tools</span>
-            <h3>Antenna Coverage</h3>
-            <p>
-              Explore antenna coverage information
-              with a tool built for mobile users.
-            </p>
-            <div class="app-links">
-              <a class="button"
-                 href="https://apps.apple.com/app/id6670706538"
-                 target="_blank" rel="noopener">
-                App Store ↗
-              </a>
-            </div>
-          </article>
-
-          <article class="app-card">
-            <div class="app-icon">📚</div>
-            <span class="tag">Education</span>
-            <h3>English Grade 3</h3>
-            <p>
-              English practice and review activities
-              designed for primary-school learners.
-            </p>
-            <div class="app-links">
-              <a class="button"
-                 href="https://apps.apple.com/app/id6762140263"
-                 target="_blank" rel="noopener">
-                App Store ↗
-              </a>
-            </div>
-          </article>
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="eyebrow-dot"></span> BUILT FOR FIELD WORK & INVENTORY</div>
+        <h1>Stop typing.<br><span>Start scanning.</span></h1>
+        <p class="hero-lede">Capture equipment serial numbers in seconds. Keep records organized by job, track device condition, and export reports — all from your phone.</p>
+        <div class="store-buttons" id="download">
+          <a class="store-button apple" href="https://apps.apple.com/vn/app/serial-collector/id6761130114?l=vi" target="_blank" rel="noopener noreferrer" data-store="ios">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M17.05 12.54c-.02-2.06 1.68-3.05 1.76-3.1-.96-1.4-2.45-1.6-2.98-1.62-1.27-.13-2.49.75-3.14.75-.66 0-1.65-.73-2.72-.71-1.39.02-2.68.82-3.39 2.08-1.45 2.52-.37 6.23 1.02 8.27.68 1 1.49 2.12 2.56 2.08 1.03-.04 1.42-.67 2.67-.67s1.6.67 2.7.65c1.12-.02 1.82-1.01 2.48-2.02.79-1.15 1.11-2.28 1.13-2.34-.03-.01-2.16-.83-2.19-3.37ZM14.98 6.47c.56-.68.94-1.61.83-2.54-.81.04-1.82.54-2.4 1.22-.52.6-.98 1.55-.86 2.46.91.07 1.86-.46 2.43-1.14Z"/></svg>
+            <span><small>Download on the</small><strong>App Store</strong></span>
+          </a>
+          <a class="store-button google" href="https://play.google.com/store/apps/details?id=com.tien.serialcollectorandroid" target="_blank" rel="noopener noreferrer" data-store="android">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#34A853" d="M3.4 2.7 13.2 12 3.4 21.3c-.3-.3-.4-.7-.4-1.2V3.9c0-.5.1-.9.4-1.2Z"/><path fill="#4285F4" d="m3.4 2.7 11.1 6.6-1.3 2.7L3.4 2.7Z"/><path fill="#FBBC04" d="m3.4 21.3 11.1-6.6-1.3-2.7-9.8 9.3Z"/><path fill="#EA4335" d="m14.5 9.3 5.1 3c.9.5.9 1.1 0 1.6l-5.1 3-2.5-4.9 2.5-2.7Z"/></svg>
+            <span><small>GET IT ON</small><strong>Google Play</strong></span>
+          </a>
         </div>
+        <div class="trust-row"><span><i>✓</i> No account required*</span><span><i>✓</i> Designed for field work</span></div>
+        <p class="fine-print">*Confirm current platform-specific features in each store listing.</p>
+      </div>
+      <div class="hero-visual" aria-label="Illustration of a serial number collection app">
+        <div class="visual-glow"></div>
+        <div class="floating-tag tag-top"><span class="mini-check">✓</span> Serial captured</div>
+        <div class="phone">
+          <div class="phone-top"><span>9:41</span><span class="phone-status">● ● ▰</span></div>
+          <div class="app-screen">
+            <div class="app-title-row"><span class="tiny-mark">▥</span><div><b>Serial Collector</b><small>Equipment session</small></div><span class="round-menu">•••</span></div>
+            <div class="session-card"><span class="session-label">CURRENT SESSION</span><b>Site Inspection</b><span class="session-sub">Updated just now</span><div class="progress-line"><span></span></div><small>12 items collected</small></div>
+            <div class="record-heading"><b>Collected items</b><span>View all →</span></div>
+            <div class="record"><span class="device-icon">▤</span><div><b>Router</b><small>SN: HWT8-24091</small></div><span class="status good">Good</span></div>
+            <div class="record"><span class="device-icon">▥</span><div><b>Radio unit</b><small>SN: RF-8831042</small></div><span class="status check">Check</span></div>
+            <div class="record"><span class="device-icon">▤</span><div><b>Power supply</b><small>SN: PS-001847</small></div><span class="status good">Good</span></div>
+            <div class="scan-button"><span>＋</span> Add serial number</div>
+            <div class="tab-bar"><span class="selected">▦<small>Records</small></span><span>▧<small>Scan</small></span><span>⇧<small>Export</small></span><span>⚙<small>Settings</small></span></div>
+          </div>
+        </div>
+        <div class="floating-tag tag-bottom"><span class="excel-icon">X</span><span><b>Report ready</b><small>Export your records</small></span></div>
       </div>
     </section>
 
-    <section class="about">
-      <div class="container">
-        <h2>Built to be useful</h2>
-        <p>
-          My goal is to create straightforward mobile apps
-          that help people work more efficiently and
-          solve everyday problems.
-        </p>
-        <p>
-          Have a question or suggestion?
-          <a href="mailto:hoangminhtien.dev@gmail.com">Contact me</a>.
-        </p>
+    <section class="proof-strip" aria-label="Key benefits">
+      <div><span class="proof-icon">⌗</span><span><b>Scan faster</b><small>Barcode, QR & OCR</small></span></div>
+      <div><span class="proof-icon">▤</span><span><b>Stay organized</b><small>Sessions, status & notes</small></span></div>
+      <div><span class="proof-icon">↗</span><span><b>Export reports</b><small>Excel & text files</small></span></div>
+      <div><span class="proof-icon">⌂</span><span><b>Field-ready</b><small>Designed for mobile use</small></span></div>
+    </section>
+
+    <section class="section features-section" id="features">
+      <div class="section-heading"><div class="eyebrow">EVERYTHING IN ONE WORKFLOW</div><h2>From label to report.<br><span>Without the busywork.</span></h2><p>Collect, review, and share equipment records with a simple workflow built for real-world jobs.</p></div>
+      <div class="feature-grid">
+        <article class="feature-card"><div class="feature-icon blue">▦</div><h3>Scan or enter</h3><p>Capture serials with supported barcode and QR formats, camera text recognition, or manual entry when needed.</p><span class="feature-number">01 / CAPTURE</span></article>
+        <article class="feature-card"><div class="feature-icon violet">☷</div><h3>Organize each job</h3><p>Keep separate sessions for sites and projects. Add equipment types, condition statuses, and useful notes.</p><span class="feature-number">02 / ORGANIZE</span></article>
+        <article class="feature-card"><div class="feature-icon green">↗</div><h3>Export and share</h3><p>Turn collected records into Excel or text files for reporting, review, and your existing documentation workflow.</p><span class="feature-number">03 / EXPORT</span></article>
       </div>
     </section>
+
+    <section class="workflow-section" id="workflow">
+      <div class="workflow-copy"><div class="eyebrow">MADE FOR THE WAY YOU WORK</div><h2>Less admin.<br><span>More done.</span></h2><p>Whether you're checking network equipment, auditing assets, maintaining devices, or counting stock, keep serial-number collection simple and consistent.</p><ul><li><span>✓</span> Keep records grouped by project or site</li><li><span>✓</span> Review equipment condition at a glance</li><li><span>✓</span> Export data for your next step</li></ul><a class="text-link" href="#download">Choose your platform <span>→</span></a></div>
+      <div class="workflow-panel"><div class="panel-top"><span class="panel-dot"></span><span class="panel-dot"></span><span class="panel-dot"></span><span class="panel-caption">COLLECTION SUMMARY</span></div><div class="summary-title">Site Inspection <span class="summary-badge">IN PROGRESS</span></div><div class="summary-metrics"><div><small>Total records</small><b>12</b></div><div><small>Checked</small><b>09</b></div><div><small>Need review</small><b>03</b></div></div><div class="summary-divider"></div><div class="summary-row"><span class="summary-symbol">▤</span><span><b>Network equipment</b><small>6 records</small></span><span class="summary-bar"><i style="width:80%"></i></span></div><div class="summary-row"><span class="summary-symbol">▥</span><span><b>Radio equipment</b><small>4 records</small></span><span class="summary-bar"><i style="width:55%"></i></span></div><div class="summary-row"><span class="summary-symbol">▧</span><span><b>Accessories</b><small>2 records</small></span><span class="summary-bar"><i style="width:30%"></i></span></div><div class="export-note"><span class="export-file">XLS</span><span><b>Ready when you are</b><small>Export a copy of your collected records</small></span><span class="export-arrow">↗</span></div><p class="illustration-note">Illustrative interface — not an in-app screenshot.</p></div>
+    </section>
+
+    <section class="privacy-section"><div class="privacy-symbol">⌑</div><div><h3>Your workflow, your records.</h3><p>Serial Collector is designed for practical mobile collection. Review the privacy information and platform-specific store listing for the current details about storage, permissions, and data handling.</p></div><a href="privacy.html" class="privacy-link">Privacy information ↗</a></section>
+
+    <section class="final-cta"><div class="eyebrow">READY FOR YOUR NEXT JOB?</div><h2>Make serial collection<br><span>the easy part.</span></h2><p>Get Serial Collector for your phone and bring your equipment records together.</p><div class="store-buttons centered"><a class="store-button apple" href="https://apps.apple.com/vn/app/serial-collector/id6761130114?l=vi" target="_blank" rel="noopener noreferrer" data-store="ios"><span class="store-letter">●</span><span><small>Download on the</small><strong>App Store</strong></span></a><a class="store-button google" href="https://play.google.com/store/apps/details?id=com.tien.serialcollectorandroid" target="_blank" rel="noopener noreferrer" data-store="android"><span class="play-triangle">▶</span><span><small>GET IT ON</small><strong>Google Play</strong></span></a></div></section>
   </main>
 
-  <footer>
-    <div class="container footer-inner">
-      <span>© 2026 Bom Apps</span>
-      <a href="mailto:hoangminhtien.dev@gmail.com">Contact</a>
-    </div>
-  </footer>
+  <footer class="site-footer"><a class="brand footer-brand" href="#"><span class="brand-mark">▥</span><span>Serial Collector</span></a><span>© <span id="year"></span> Serial Collector. All rights reserved.</span><div><a href="privacy.html">Privacy</a><a href="#download">Download</a></div></footer>
+  <script src="script.js"></script>
 </body>
 </html>
