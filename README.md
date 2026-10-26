@@ -39,3 +39,8 @@ Use tagged links when sharing on social platforms, for example:
 `https://YOUR-SITE-NAME.netlify.app/?utm_source=facebook&utm_medium=social&utm_campaign=launch`
 
 These tags only label campaign visits in the URL. This project does not collect or send analytics data. Add analytics only if you intentionally configure a provider and update your privacy information accordingly.
+
+
+## Real app screenshots
+
+The hero section uses optimized WebP screenshots in `assets/screenshots/`. The carousel advances every 3 seconds, supports swipe gestures, arrow buttons, dot navigation, and keyboard arrows. It respects the visitor's reduced-motion preference. Replace or reorder the screenshot files and matching slide markup in `index.html` if you update the app screens.
